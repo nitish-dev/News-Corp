@@ -31,25 +31,34 @@ img {
   padding: 0;
 }
 .container {
-  width: 95%;
-  max-width: 640px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
+  max-width: 960px;
 }
 
-.leftbox {
-  width: 75%;
-  float: left;
-}
 .collection-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 470px;
   background: #fff;
   padding: 20px;
-  float: left;
 }
 .data-col {
-  width: 50%;
-  float: left;
-  overflow: hidden;
   position: relative;
+}
+.data-col:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.data-col:nth-child(2) {
+  grid-column: 2/3;
+}
+.data-col:nth-child(3) {
+  grid-column: 2/3;
+}
+.data-col:nth-child(4) {
+  grid-column: 2/3;
 }
 @media only screen and (max-width: 540px) {
   .data-col {
@@ -62,11 +71,15 @@ img {
 }
 .data-col:first-child .inside-con {
   margin: 0 3% 0 0;
-  height: calc(690px);
+  height: 100%;
 }
 
-.data-col:last-child {
-  float: right;
+.inside-con ul li a {
+  display: flex;
+  text-decoration: none;
+}
+.inside-con ul li a span img {
+  width: 90px;
 }
 .hero-img {
   width: 100%;
@@ -91,8 +104,7 @@ img {
   text-transform: uppercase;
 }
 .info {
-  padding: 20px 0 0 0;
-  clear: both;
+  padding: 10px 0 0 0;
 }
 .data-col:first-child .info {
   position: absolute;
@@ -110,23 +122,23 @@ img {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 ul li {
   padding: 10px 0 0;
 }
-ul li .info {
-  padding: 0;
-}
 .text {
-  width: 62%;
-  float: left;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: bold;
   color: #666;
+  text-decoration: none;
+}
+.text:hover {
+  color: #000;
 }
 .img {
-  width: 30%;
-  float: right;
+  max-width: 100%;
+  display: inline-block;
 }
 .img img {
   width: 100%;
@@ -137,19 +149,34 @@ ul li .info {
   font-weight: bold;
 }
 
-.head-top {
-  width: 100%;
-  display: block;
-}
 .head-top img {
   width: 100%;
 }
-.rightbox {
-  float: right;
-  width: 23%;
+
+@media screen and (min-width: 768px) {
+  .leftbox {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .rightbox {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .leftbox,
+  .rightbox {
+    box-sizing: border-box;
+    padding: 0 5px;
+  }
 }
-@media only screen and (max-width: 1024px) {
-  .head-top,
+
+@media screen and (max-width: 767px) {
+  .collection-box {
+    display: block;
+  }
+  .data-col:first-child .info {
+    position: unset;
+  }
+  .leftbox,
   .rightbox {
     display: none;
   }
