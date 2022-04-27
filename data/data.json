@@ -1,0 +1,36 @@
+{
+  "collection": [
+    {
+      "collectiontype": "landing",
+      "collectionid": "0",
+      "articles": [
+        {
+          "Title": "Live: Greg Inglis to announce NRL retirement",
+          "Imageurl": "images/greg-inglis.jpg",
+          "Intro": "Greg Inglish has arrived at South Sydney headquarters and will front a media conferce later this morning to announce his retirement from rugby league.",
+          "Published": "2m",
+          "Comment": "",
+          "Tag": "Rabbitosh star"
+        },
+        {
+          "Title": "Opal Tower units still closed as work only approved now",
+          "Imageurl": "images/opal-tower.jpg",
+          "Intro": "People are still unable to move back into almost half the apartments in Opal Tower more than three months after cracks appeared in the trouble-plagued building and final rectification works have only just been given the green light.",
+          "Published": "1h",
+          "Comment": "1",
+          "Tag": "Exclusive"
+        },
+        {
+          "Title": "One Nation support has crashed: Newspoll",
+          "Imageurl": "images/newspoll.jpg",
+          "Published": "1h"
+        },
+        {
+          "Title": "Two fake cops robbed Sydney currency exchange shop",
+          "Imageurl": "images/two-fake.jpg",
+          "Published": "1h"
+        }
+      ]
+    }
+  ]
+}

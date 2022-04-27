@@ -1,0 +1,156 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html {
+  font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  font-size: 106.25%;
+  quotes: "â€œ" "â€";
+}
+body {
+  font-size: 14px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: system-ui;
+  background-color: #f4f4f4;
+  color: #1d1d1f;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+img {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 95%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.leftbox {
+  width: 75%;
+  float: left;
+}
+.collection-box {
+  background: #fff;
+  padding: 20px;
+  float: left;
+}
+.data-col {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 540px) {
+  .data-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.data-col .inside-con {
+  border-bottom: 1px solid #6666;
+}
+.data-col:first-child .inside-con {
+  margin: 0 3% 0 0;
+  height: calc(690px);
+}
+
+.data-col:last-child {
+  float: right;
+}
+.hero-img {
+  width: 100%;
+}
+.data-col h2 {
+  font-size: 25px;
+  line-height: 28px;
+  position: relative;
+  padding: 5px 0;
+  margin: 0;
+}
+.data-col h2:before {
+  content: "";
+  background: url(../images/plus-icon.jpg) no-repeat left center;
+
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  padding-right: 10px;
+}
+.data-col:first-child h2 {
+  text-transform: uppercase;
+}
+.info {
+  padding: 20px 0 0 0;
+  clear: both;
+}
+.data-col:first-child .info {
+  position: absolute;
+  bottom: 10px;
+}
+.info span {
+  padding: 0 20px 0 0;
+  font-size: 12px;
+  color: #666666;
+}
+.info span i {
+  padding-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 10px 0 0;
+}
+ul li .info {
+  padding: 0;
+}
+.text {
+  width: 62%;
+  float: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+.img {
+  width: 30%;
+  float: right;
+}
+.img img {
+  width: 100%;
+}
+.red {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.head-top {
+  width: 100%;
+  display: block;
+}
+.head-top img {
+  width: 100%;
+}
+.rightbox {
+  float: right;
+  width: 23%;
+}
+@media only screen and (max-width: 1024px) {
+  .head-top,
+  .rightbox {
+    display: none;
+  }
+}
